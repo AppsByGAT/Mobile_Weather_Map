@@ -1,0 +1,193 @@
+    html { height: 100%; }
+
+    body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    #map { 
+      width:100%;
+      height:100%;
+    }
+
+#map img {
+max-width: none;
+}
+
+    .options {
+      overflow: hidden;
+      margin: 10px 0 10px 0;
+    }
+
+    .option {
+      float: left;
+      width: 210px;
+    }
+
+    .heading {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .Toggles {
+    float:left;
+    margin: auto 15px;
+    }
+
+.Geo-Icon {
+   display: block;
+   width: 30px;
+   height: 30px;
+   margin-top: 5px;
+   margin-right: -12px;
+   background-image: url("../IMG/GeoLoc.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: linear-gradient(to bottom, rgb(21, 21, 21), rgb(4, 4, 4));
+   cursor: pointer;
+   border-width: 1px;
+   -moz-border-top-colors: none;
+   -moz-border-right-colors: none;
+   -moz-border-bottom-colors: none;
+   -moz-border-left-colors: none;
+   border-image: none;
+   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgb(179, 179, 179);
+   border-radius: 4px 4px 4px 4px;
+   box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.1) inset, 0px 1px 0px rgba(255, 255, 255, 0.075);
+}
+
+#Inner {
+   margin: 20px;
+}
+
+.signature {
+   float: right;
+}
+
+/***************************
+*    Slider Menu
+***************************/
+
+body .viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+body .viewport .frame {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+}
+
+body .viewport .frame .navbar .navbar-inner {
+  border-radius: 0;
+  padding-left: 5px; 
+}
+
+body .viewport .frame .menu {
+  height: 100%;
+  /* background-color: #3D6AA2; */ 
+}
+
+body .viewport .frame .menu.collapse {
+  float: left;
+  height: 100% !important;
+  width: auto; 
+}
+
+body .viewport .frame .menu.collapse.height {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; 
+}
+
+body .viewport .frame .menu.collapse.width {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease; 
+}
+
+body .viewport .frame .menu.collapse.in.width {
+  width: auto; 
+}
+
+body .viewport .frame .menu.collapse.in.height {
+  height: auto; 
+}
+
+body .viewport .frame .menu .collapse-inner {
+  position: relative;
+  width: 250px;
+  height: 100%; 
+}
+
+body .viewport .frame .menu .navbar .navbar-inner {
+  text-align: center;
+  color: grey;
+  font-size: 1.2em;
+  line-height: 38px; 
+}
+
+#Scroller {
+    overflow: hidden;
+    text-align: center;
+}
+
+body .viewport .frame .menu .nav-stacked {
+  padding: 0 10px; 
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #Scroller {
+    //height:400px;
+  }
+
+  #Scroll {
+    overflow-y: scroll; 
+    height:200px;
+    padding-bottom:250px;
+  }
+}
+
+body .viewport .frame .view {
+  width: 50%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+body .viewport .frame .view .navbar .navbar-inner .btn-navbar {
+  display: block;
+  float: left; 
+}
+
+body .viewport .frame .view #content {
+      width:100%;
+      height:100%;
+  text-align: justify; 
+}
+
+.navbar {
+  margin: 0px;
+}
